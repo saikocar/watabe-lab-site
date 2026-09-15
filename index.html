@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous Driving AI Laboratory (Watabe Lab) | Saitama Institute of Technology</title>
+<meta name="description" content="Autonomous Driving AI Laboratory led by Prof. Daishi Watabe, Department of Information Systems, Saitama Institute of Technology. Research on autonomous buses for public transit, learning-based planning, and biometrics.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="ja" href="ja.html">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div>
+    <strong>Autonomous Driving AI Laboratory</strong>
+    <div class="inst">Department of Information Systems, Faculty of Engineering, Saitama Institute of Technology</div>
+  </div>
+  <nav aria-label="Sections">
+    <a href="#members">Members</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact</a>
+    <a href="ja.html" hreflang="ja" lang="ja">日本語</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <h1>Autonomous Driving AI Laboratory<br>(Watabe Lab)</h1>
+  <p class="sub">Saitama Institute of Technology, Fukaya, Saitama, Japan</p>
+</div>
+
+<div class="pi">
+  <div>
+    <h2>Principal Investigator: Prof. Daishi Watabe</h2>
+    <p class="role">Professor, Department of Information Systems, Faculty of Engineering, and Graduate School of Engineering<br>
+    Vice President, Saitama Institute of Technology<br>
+    Director, Autonomous Driving Technology Development Center</p>
+  </div>
+  <dl>
+    <dt>Degree</dt><dd>Dr. Sci. (Tohoku University)</dd>
+    <dt>Email</dt><dd><a href="mailto:dw@sit.ac.jp">dw@sit.ac.jp</a></dd>
+    <dt>researchmap</dt><dd><a href="https://researchmap.jp/daishiwatabe?lang=en">researchmap.jp/daishiwatabe</a></dd>
+    <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0003-2731-2226">0000-0003-2731-2226</a></dd>
+    <dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?user=ggYLaXIAAAAJ&amp;hl=en">Google Scholar</a></dd>
+  </dl>
+</div>
+
+<section id="about">
+  <h2>About the lab</h2>
+  <p>The lab conducts research and education on AI-based image recognition for autonomous driving and biometrics. Since late 2018 we have developed autonomous buses for public roads on the open-source Autoware stack, working across localization, perception, planning and control, fail-safe design, and the steering and pedal actuators themselves.</p>
+  <p>The lab is the core of the university's Autonomous Driving Technology Development Center (established 2019), which Prof. Watabe directs. Our buses carry passengers in regular service, and the driving logs they record feed back into our AI research.</p>
+</section>
+
+<section id="members">
+  <h2>Members</h2>
+  <p>The group of about 40 people is led by Prof. Watabe and works with the Autonomous Driving Technology Development Center on vehicle development, field operation, and data analysis.</p>
+  <div class="table-scroll">
+  <table class="members">
+    <thead><tr><th scope="col">Position</th><th scope="col">Number</th><th scope="col">Role</th></tr></thead>
+    <tbody>
+      <tr><td>Principal Investigator (Professor)</td><td>1</td><td>Leads the lab and the Autonomous Driving Technology Development Center</td></tr>
+      <tr><td>Doctoral students</td><td>3</td><td>Doctoral research on autonomous driving</td></tr>
+      <tr><td>Research engineers (PhD, lab alumni)</td><td>2</td><td>Autonomous bus development at the Development Center</td></tr>
+      <tr><td>Research assistant (part-time)</td><td>1</td><td>Research support</td></tr>
+      <tr><td>Safety driver</td><td>1</td><td>On-board operation of the autonomous buses</td></tr>
+      <tr><td>Undergraduate students (4th year)</td><td>14</td><td>Graduation research</td></tr>
+      <tr><td>Undergraduate students (3rd year)</td><td>17</td><td>Pre-graduation research and seminars</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <ul class="themes">
+    <li>
+      <span class="tag">Public transit</span>
+      <h3>Autonomous buses in regular service</h3>
+      <p>We have taken part in developing five autonomous buses with support from national, prefectural and municipal governments and a foundation. Since April 2025 our Isuzu Erga Mio bus has served the Fukaya City community bus route, covering its full 37&nbsp;km loop. A large autonomous school bus has run between the campus and the nearest station since 2022.</p>
+    </li>
+    <li>
+      <span class="tag">Machine learning</span>
+      <h3>Learning-based planning from real driving logs</h3>
+      <p>The buses have recorded about 8,000 runs (about 66&nbsp;TB) of LiDAR, 4D radar, camera, GNSS/IMU and vehicle CAN data. We use these logs to train and tune diffusion-model trajectory planners for Japanese bus operation, and compare them with vision-language-action models on the same scenes, using the ABCI supercomputer.</p>
+    </li>
+    <li>
+      <span class="tag">Safety</span>
+      <h3>Localization and fail-safe design</h3>
+      <p>Switching between LiDAR- and GNSS-based localization along urban routes, detection of sensor faults, and redundant emergency-stop paths that remain effective when software fails.</p>
+    </li>
+    <li>
+      <span class="tag">Maritime</span>
+      <h3>World's first self-driving amphibious bus</h3>
+      <p>In 2022 we developed, with partners, unmanned driving and navigation technology for an amphibious bus that drives on land and sails on Lake Yamba-Agatsuma, Gunma.</p>
+    </li>
+    <li>
+      <span class="tag">Biometrics</span>
+      <h3>Ear recognition robust to pose</h3>
+      <p>Ear biometrics that stay reliable under out-of-plane rotation, from a single enrolled image, supported by three JSPS KAKENHI grants (2010&ndash;2017).</p>
+    </li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Selected publications</h2>
+  <ol class="pubs">
+    <li>Enhancing Safe Driving of Autonomous Buses in Obstructed-View Conditions Using Distributed Monocular Cameras. <span class="venue">IECON 2024, 50th Annual Conference of the IEEE Industrial Electronics Society.</span> <a href="https://doi.org/10.1109/IECON55916.2024.10905580">doi:10.1109/IECON55916.2024.10905580</a></li>
+    <li>Improvement of Self-Localization Sensor Transition Based on Autonomous Driving. <span class="venue">IECON 2023, 49th Annual Conference of the IEEE Industrial Electronics Society.</span> <a href="https://doi.org/10.1109/iecon51785.2023.10311843">doi:10.1109/iecon51785.2023.10311843</a></li>
+    <li>World's first self-driving amphibious bus. <span class="venue">International Robotics &amp; Automation Journal.</span> <a href="https://doi.org/10.15406/iratj.2023.09.00254">doi:10.15406/iratj.2023.09.00254</a></li>
+    <li>ACDR: Autonomous-car drive recorder. <span class="venue">Journal of Robotics and Mechatronics, 2020.</span> <a href="https://doi.org/10.20965/jrm.2020.p0634">doi:10.20965/jrm.2020.p0634</a></li>
+    <li>Joystick Car Drive System and its Application to Self-driving Microbus. <span class="venue">IECON 2020, 46th Annual Conference of the IEEE Industrial Electronics Society.</span> <a href="https://doi.org/10.1109/IECON43393.2020.9254364">doi:10.1109/IECON43393.2020.9254364</a></li>
+    <li>Use of Generated Ear Images by GAN to Biometrics Based on Deep Learning. <span class="venue">IEICE Transactions A, 2020.</span> <a href="https://doi.org/10.14923/transfunj.2020BAL0002">doi:10.14923/transfunj.2020BAL0002</a></li>
+  </ol>
+  <p>Full list (77 papers): <a href="https://researchmap.jp/daishiwatabe/published_papers?lang=en">researchmap</a></p>
+</section>
+
+<section id="service">
+  <h2>Professional service</h2>
+  <ul class="plain">
+    <li>Member, Working Group on Safety Standards and Inspection, Study Group on Autonomous Ships, Maritime Bureau, Ministry of Land, Infrastructure, Transport and Tourism (2024&ndash;2025)</li>
+    <li>Member, ISO/IEC JTC 1/SC 37 Biometrics (2016&ndash;2025); Secretary, WG4 and WG6 (2018&ndash;2025)</li>
+    <li>Member, IEICE Technical Committee on Biometrics (2014&ndash;)</li>
+    <li>Editorial Planning Board, Institute of Image Information and Television Engineers (2015&ndash;)</li>
+    <li>Program Chair, International Conference on Biometrics and Kansei Engineering (2019)</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <p>Information and Coding Theory; Statistical Processing I; Basic Information Engineering Laboratory; Applied Programming Languages; Advanced Media Engineering (graduate).</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Prof. Daishi Watabe<br>
+  Department of Information Systems, Faculty of Engineering, Saitama Institute of Technology<br>
+  1690 Fusaiji, Fukaya, Saitama 369-0293, Japan<br>
+  Email: <a href="mailto:dw@sit.ac.jp">dw@sit.ac.jp</a> &middot; Tel: +81-48-585-2940 (Autonomous Driving Technology Development Center)</p>
+</section>
+</main>
+
+<footer class="site">
+  &copy; Autonomous Driving AI Laboratory, Saitama Institute of Technology. Last updated September 2026.
+</footer>
+
+</div>
+</body>
+</html>

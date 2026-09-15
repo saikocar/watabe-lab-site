@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自動運転AI研究室（渡部研究室）| 埼玉工業大学</title>
+<meta name="description" content="埼玉工業大学 工学部 情報システム学科 渡部大志教授の自動運転AI研究室。公共交通の自動運転バス、走行記録からの学習型計画、生体認証の研究。">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="en" href="index.html">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div>
+    <strong>自動運転AI研究室</strong>
+    <div class="inst">埼玉工業大学 工学部 情報システム学科</div>
+  </div>
+  <nav aria-label="目次">
+    <a href="#members">メンバー</a>
+    <a href="#research">研究</a>
+    <a href="#publications">業績</a>
+    <a href="#service">委員歴</a>
+    <a href="#contact">連絡先</a>
+    <a href="index.html" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <h1>自動運転AI研究室<br>（渡部研究室）</h1>
+  <p class="sub">埼玉工業大学（埼玉県深谷市）</p>
+</div>
+
+<div class="pi">
+  <div>
+    <h2>研究室主宰：渡部 大志 教授</h2>
+    <p class="role">工学部 情報システム学科／大学院 工学研究科 教授<br>
+    副学長<br>
+    自動運転技術開発センター センター長</p>
+  </div>
+  <dl>
+    <dt>学位</dt><dd>博士（理学）（東北大学）</dd>
+    <dt>E-mail</dt><dd><a href="mailto:dw@sit.ac.jp">dw@sit.ac.jp</a></dd>
+    <dt>researchmap</dt><dd><a href="https://researchmap.jp/daishiwatabe">researchmap.jp/daishiwatabe</a></dd>
+    <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0003-2731-2226">0000-0003-2731-2226</a></dd>
+    <dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?user=ggYLaXIAAAAJ">Google Scholar</a></dd>
+  </dl>
+</div>
+
+<section id="about">
+  <h2>研究室について</h2>
+  <p>AI による画像認識を用いた自動運転技術と生体認証技術の研究教育を行っています。2018年末から、オープンソースの Autoware を基盤に公道を走る自動運転バスを開発してきました。位置推定・認識・計画と制御・フェールセーフ、さらにハンドルやペダルのアクチュエータまで手がけています。</p>
+  <p>研究室は、渡部がセンター長を務める自動運転技術開発センター（2019年設立）の中核です。自動運転バスは実際に乗客を乗せて運行しており、そこで記録した走行データを AI の研究に活かしています。</p>
+</section>
+
+<section id="members">
+  <h2>メンバー</h2>
+  <p>渡部が率いる約40名のグループで、自動運転技術開発センターと一体で車両開発・運行・データ解析に取り組んでいます。</p>
+  <div class="table-scroll">
+  <table class="members">
+    <thead><tr><th scope="col">区分</th><th scope="col">人数</th><th scope="col">役割</th></tr></thead>
+    <tbody>
+      <tr><td>教授（研究室主宰）</td><td>1</td><td>研究室と自動運転技術開発センターの統括</td></tr>
+      <tr><td>博士課程</td><td>3</td><td>自動運転に関する博士研究</td></tr>
+      <tr><td>研究エンジニア（本研究室で博士号取得）</td><td>2</td><td>自動運転技術開発センターでの自動運転バス開発</td></tr>
+      <tr><td>研究支援員</td><td>1</td><td>研究支援</td></tr>
+      <tr><td>運転士</td><td>1</td><td>自動運転バスの運行（車内での監視・運転）</td></tr>
+      <tr><td>学部4年（卒業研究）</td><td>14</td><td>卒業研究</td></tr>
+      <tr><td>学部3年</td><td>17</td><td>卒業研究に向けたゼミ・研究</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="research">
+  <h2>研究テーマ</h2>
+  <ul class="themes">
+    <li>
+      <span class="tag">公共交通</span>
+      <h3>営業運行する自動運転バス</h3>
+      <p>国・県・市・財団の補助により、5台の自動運転バスの開発に関わってきました。2025年4月からは、いすゞエルガミオの自動運転バスが深谷市コミュニティバスとして全線37&nbsp;kmを運行しています。2022年からは、大型の自動運転スクールバスがキャンパスと最寄り駅の間を走っています。</p>
+    </li>
+    <li>
+      <span class="tag">機械学習</span>
+      <h3>実走行記録からの学習型の軌跡計画</h3>
+      <p>LiDAR・4Dレーダ・カメラ・GNSS/IMU・車両CANの走行記録を約8,000本（約66&nbsp;TB）蓄積しています。これを使い、拡散モデルに基づく軌跡生成器を日本の路線バス運行向けに学習・調整し、同じ場面で Vision-Language-Action モデルと比較しています（ABCI を利用）。</p>
+    </li>
+    <li>
+      <span class="tag">安全</span>
+      <h3>位置推定とフェールセーフ</h3>
+      <p>市街地の経路での LiDAR と GNSS の位置推定の切り替え、センサ異常の検知、ソフトウェアが止まっても効く非常停止経路の多重化。</p>
+    </li>
+    <li>
+      <span class="tag">海事</span>
+      <h3>世界初の水陸両用バスの自動運転</h3>
+      <p>2022年、陸を走り群馬県の八ッ場あがつま湖を航行する水陸両用バスの無人運転・運航技術を、共同で開発しました。</p>
+    </li>
+    <li>
+      <span class="tag">生体認証</span>
+      <h3>姿勢変化に強い耳介認証</h3>
+      <p>1枚の登録画像でも、平面外回転に強い耳介認証。科研費3件（2010〜2017年）の支援を受けました。</p>
+    </li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>主な業績</h2>
+  <ol class="pubs">
+    <li>Enhancing Safe Driving of Autonomous Buses in Obstructed-View Conditions Using Distributed Monocular Cameras. <span class="venue">IECON 2024.</span> <a href="https://doi.org/10.1109/IECON55916.2024.10905580">doi:10.1109/IECON55916.2024.10905580</a></li>
+    <li>Improvement of Self-Localization Sensor Transition Based on Autonomous Driving. <span class="venue">IECON 2023.</span> <a href="https://doi.org/10.1109/iecon51785.2023.10311843">doi:10.1109/iecon51785.2023.10311843</a></li>
+    <li>World's first self-driving amphibious bus. <span class="venue">International Robotics &amp; Automation Journal.</span> <a href="https://doi.org/10.15406/iratj.2023.09.00254">doi:10.15406/iratj.2023.09.00254</a></li>
+    <li>ACDR: Autonomous-car drive recorder. <span class="venue">Journal of Robotics and Mechatronics, 2020.</span> <a href="https://doi.org/10.20965/jrm.2020.p0634">doi:10.20965/jrm.2020.p0634</a></li>
+    <li>Joystick Car Drive System and its Application to Self-driving Microbus. <span class="venue">IECON 2020.</span> <a href="https://doi.org/10.1109/IECON43393.2020.9254364">doi:10.1109/IECON43393.2020.9254364</a></li>
+    <li>Use of Generated Ear Images by GAN to Biometrics Based on Deep Learning. <span class="venue">電子情報通信学会論文誌 A, 2020.</span> <a href="https://doi.org/10.14923/transfunj.2020BAL0002">doi:10.14923/transfunj.2020BAL0002</a></li>
+  </ol>
+  <p>論文の全リスト（77件）：<a href="https://researchmap.jp/daishiwatabe/published_papers">researchmap</a></p>
+</section>
+
+<section id="service">
+  <h2>主な委員歴</h2>
+  <ul class="plain">
+    <li>国土交通省 海事局 自動運航船検討会 安全基準・検査WG 委員（2024〜2025年）</li>
+    <li>ISO/IEC JTC 1/SC 37（バイオメトリクス）委員（2016〜2025年）、WG4・WG6 幹事（2018〜2025年）</li>
+    <li>電子情報通信学会 バイオメトリクス研究専門委員会 委員（2014年〜）</li>
+    <li>映像情報メディア学会 学会誌企画編集委員（2015年〜）</li>
+    <li>International Conference on Biometrics and Kansei Engineering プログラム委員長（2019年）</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>担当科目</h2>
+  <p>情報・符号理論／統計処理Ⅰ／基礎情報工学実験／応用プログラム言語／メディア工学特論</p>
+</section>
+
+<section id="contact">
+  <h2>連絡先</h2>
+  <p>渡部 大志<br>
+  埼玉工業大学 工学部 情報システム学科<br>
+  〒369-0293 埼玉県深谷市普済寺1690<br>
+  E-mail：<a href="mailto:dw@sit.ac.jp">dw@sit.ac.jp</a>／TEL：048-585-2940（自動運転技術開発センター）</p>
+</section>
+</main>
+
+<footer class="site">
+  &copy; 埼玉工業大学 自動運転AI研究室　最終更新 2026年9月
+</footer>
+
+</div>
+</body>
+</html>
