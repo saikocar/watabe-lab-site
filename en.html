@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous Driving AI Laboratory (Watabe Lab) | Saitama Institute of Technology</title>
+<meta name="description" content="Autonomous Driving AI Laboratory led by Prof. Daishi Watabe, Department of Information Systems, Saitama Institute of Technology. We build autonomous buses that carry passengers on public roads, and use their driving logs for learning-based planning research.">
+<meta property="og:title" content="Autonomous Driving AI Laboratory (Watabe Lab) | Saitama Institute of Technology">
+<meta property="og:description" content="Your code drives a real bus through a real town. Autonomous buses built inside a university.">
+<meta property="og:image" content="https://watabe-lab.sit.ac.jp/img/kururin_2025.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="ja" href="index.html">
+<link rel="alternate" hreflang="en" href="en.html">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">Autonomous Driving AI Lab (Watabe Lab)<small>Department of Information Systems, Faculty of Engineering, Saitama Institute of Technology</small></a>
+    <nav aria-label="Sections">
+      <a href="#what">What we do</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#life">Students</a>
+      <a href="#history">Milestones</a>
+      <a href="#pi">PI</a>
+      <a href="#join">Contact</a>
+      <a class="lang" href="index.html" hreflang="ja" lang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero" style="background-image: url('img/kururin_2025.jpg');">
+  <div class="wrap">
+    <span class="eyebrow">Saitama Institute of Technology, Fukaya, Japan</span>
+    <h1>Your code drives a real bus through a real town.</h1>
+    <p>"Kururin", the community bus of Fukaya City, is an autonomous bus developed by this lab and the university's Autonomous Driving Technology Development Center. Sensor installation, AI, safety design and passenger service on public roads all happen inside the university.</p>
+    <div class="btns">
+      <a class="btn" href="#join">Visit the lab</a>
+      <a class="btn ghost" href="#what">What we do</a>
+    </div>
+  </div>
+  <p class="credit">Photo: Saitama Institute of Technology (Fukaya, 2025)</p>
+</div>
+
+<div class="stats" aria-label="Key numbers">
+  <div class="wrap">
+    <div><div class="n">5</div><div class="l">autonomous buses we helped develop</div></div>
+    <div><div class="n">37<small>km</small></div><div class="l">full community-bus loop driven autonomously (2025, among the longest in Japan)</div></div>
+    <div><div class="n">8,000<small>+</small></div><div class="l">recorded runs (about 17 TB) used for AI training</div></div>
+    <div><div class="n">World first</div><div class="l">self-driving, self-navigating amphibious bus (2022)</div></div>
+    <div><div class="n">~40</div><div class="l">people: faculty, doctoral students, research engineers, undergraduates</div></div>
+  </div>
+</div>
+
+<section id="what">
+  <div class="wrap">
+    <span class="eyebrow">What you can do here</span>
+    <h2>What we do</h2>
+    <p class="lead">We do not study autonomous driving from a textbook. We study it on licensed buses that carry passengers. The lab covers everything from sensors to control to service on the street, and nothing is a black box.</p>
+    <ul class="cards four">
+      <li class="card">
+        <img src="img/students_lidar_2019.jpg" alt="A student mounting a LiDAR on the roof of the test car" loading="lazy">
+        <div class="body"><div class="num">01</div><h3>Drive a real vehicle yourself</h3><p>Mount LiDAR, cameras and radar, run the open-source Autoware stack, and drive on the test course and on public roads.</p></div>
+      </li>
+      <li class="card">
+        <img src="img/students_monitor_2019.jpg" alt="Students looking at driving data on a monitor" loading="lazy">
+        <div class="body"><div class="num">02</div><h3>Train AI on real driving logs</h3><p>More than 8,000 recorded runs (LiDAR, 4D radar, cameras, GNSS/IMU, vehicle CAN) feed diffusion-model trajectory planners and vision-language-action models, trained on the ABCI supercomputer.</p></div>
+      </li>
+      <li class="card">
+        <img src="img/students_laptop_2019.jpg" alt="Students tuning the test car with a laptop" loading="lazy">
+        <div class="body"><div class="num">03</div><h3>Design for safety</h3><p>Switching between LiDAR- and GNSS-based localization in town, detecting sensor faults, and emergency-stop paths that still work when software fails. Safety design is a research topic in itself.</p></div>
+      </li>
+      <li class="card">
+        <img src="img/bus_summit_2026.jpg" alt="Fukaya Bus Summit venue" loading="lazy">
+        <div class="body"><div class="num">04</div><h3>Deploy with the city</h3><p>We work with Fukaya City, the national government and bus operators to carry passengers. Students take part in test rides, school outreach and public events.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="vehicles" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Vehicles</span>
+    <h2>Autonomous buses built at the university</h2>
+    <p class="lead">From a microbus in 2019 to full-size transit buses, an amphibious bus and a city community bus. With support from national, prefectural and municipal governments and a foundation, we have taken part in developing five autonomous buses.</p>
+    <ul class="gallery">
+      <li><figure><img src="img/kururin_2025.jpg" alt="Kururin community bus" loading="lazy"><figcaption><strong>Kururin (Isuzu Erga Mio)</strong><span>Fukaya City community bus since April 2025. Its full 37 km loop is driven autonomously (SAE Level 2).</span></figcaption></figure></li>
+      <li><figure><img src="img/rainbow_shinjuku_2023.jpg" alt="Full-size autonomous bus in Nishi-Shinjuku, Tokyo" loading="lazy"><figcaption><strong>Full-size transit bus (Hino Rainbow II)</strong><span>Since 2020. First full-size autonomous bus in regular service in Saitama. Drove public roads in Nishi-Shinjuku, Tokyo, in 2023.</span></figcaption></figure></li>
+      <li><figure><img src="img/amphibious_yanba_2022.jpg" alt="Amphibious bus entering Lake Yamba-Agatsuma" loading="lazy"><figcaption><strong>Amphibious bus</strong><span>2022. Drives on land, enters the lake, navigates, avoids obstacles and lands again, all autonomously. A world first.</span></figcaption></figure></li>
+      <li><figure><img src="img/schoolbus_stop_2022.jpg" alt="Students boarding the autonomous school bus" loading="lazy"><figcaption><strong>Autonomous school bus</strong><span>Since 2022, the first at a private university in Japan. Carries students between Okabe station and the campus on public roads.</span></figcaption></figure></li>
+      <li><figure><img src="img/rainbow_sakura_2024.jpg" alt="Autonomous bus under cherry blossoms" loading="lazy"><figcaption><strong>On the streets of Fukaya</strong><span>2024. Tour service for the event celebrating the new 10,000-yen note featuring Eiichi Shibusawa, a native of Fukaya.</span></figcaption></figure></li>
+      <li><figure><img src="img/testcar_2019.jpg" alt="Test car in SAIKO colours" loading="lazy"><figcaption><strong>Test car</strong><span>2019. Students fit the sensors and try algorithms on campus and nearby roads. Every project starts here.</span></figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
+<section id="data">
+  <div class="wrap">
+    <span class="eyebrow">Data</span>
+    <h2>The more it drives, the smarter it gets</h2>
+    <div class="feature">
+      <div>
+        <p>Every run of Kururin leaves a synchronized record of its sensors and vehicle state. Owning real operational data from a real town is the lab's biggest asset.</p>
+        <p>The data become research topics directly. Where did autonomy drop out? Why did the driver intervene? In which scenes does the path wobble? Read the log, find the cause, fix it, drive again. Undergraduates run that cycle in their graduation research.</p>
+        <ul class="plain">
+          <li>LiDAR, 4D radar, cameras, GNSS/IMU and vehicle CAN, recorded together</li>
+          <li>More than 8,000 runs, about 17 TB, indexed by date, place and vehicle</li>
+          <li>Used to train and evaluate learning-based planners (diffusion models, vision-language-action models)</li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/automation_rate.png" alt="Automation rate of Kururin over time, close to 100% on most days" loading="lazy">
+        <p class="caption">Automation rate of Kururin (autonomous distance divided by planned autonomous distance) over time. Most days sit near 100%; the dips are what we investigate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="life" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Student life</span>
+    <h2>Three years in the lab</h2>
+    <p class="lead">Students join in the second half of their third year and take on their own topic for graduation research. Graduate students aim for international conferences. The lab currently has 14 fourth-year and 17 third-year undergraduates and 3 doctoral students.</p>
+    <ol class="path">
+      <li><div class="year">Year 3</div><p>Seminar on the basics: Linux, ROS 2, Autoware, Python and C++, up to making the test car move.</p><ul><li>Sensor mounting and calibration</li><li>Replaying and visualizing driving logs</li><li>Helping seniors with their research</li></ul></li>
+      <li><div class="year">Year 4</div><p>Graduation research with the real vehicles and data. Recent topics include:</p><ul><li>Safe passage through obstructed-view intersections with distributed cameras</li><li>Smarter switching between LiDAR and GNSS localization</li><li>Trajectory planning learned from driving logs</li><li>Ear biometrics for unlocking smartphones</li></ul></li>
+      <li><div class="year">Graduate school</div><p>Publish at international conferences and in journals. Doctoral students are core members of the Development Center's engineering work.</p><ul><li>Presentations at IEEE IECON and other conferences</li><li>Joint projects with government and industry</li><li>Two PhD alumni continue development as research engineers</li></ul></li>
+    </ol>
+    <ul class="gallery" style="margin-top:1.5rem">
+      <li><figure><img src="img/students_group_2019.jpg" alt="Lab members around the test car" loading="lazy"><figcaption><strong>Lab members</strong><span>With the test car (2019)</span></figcaption></figure></li>
+      <li><figure><img src="img/schoolbus_inside_2022.jpg" alt="Inside the autonomous school bus" loading="lazy"><figcaption><strong>Inside the autonomous school bus</strong><span>Commuting on a bus you helped build (2022)</span></figcaption></figure></li>
+      <li><figure><img src="img/special_class_2023.jpg" alt="Outreach class in front of the autonomous bus" loading="lazy"><figcaption><strong>Outreach for schoolchildren</strong><span>"Imagining a society with autonomous driving" (Fukaya, 2023)</span></figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
+<section id="history">
+  <div class="wrap">
+    <span class="eyebrow">Milestones</span>
+    <h2>Milestones</h2>
+    <ul class="timeline">
+      <li><time>2019.08</time> Autoware deployed on a Hino Liesse II microbus, the lab's first autonomous bus</li>
+      <li><time>2021.02</time> <a href="https://www.sit.ac.jp/news/210212_1/index.html">First autonomous bus in regular service in Saitama Prefecture</a></li>
+      <li><time>2021.04</time> <a href="https://www.sit.ac.jp/news/210430_1/index.html">First full-size autonomous bus in regular service in Saitama</a></li>
+      <li><time>2022.04</time> <a href="https://www.sit.ac.jp/news/220429_1/index.html">World's first unmanned driving and navigation of an amphibious bus</a><span class="tag">World first</span></li>
+      <li><time>2022.09</time> <a href="https://www.sit.ac.jp/news/220922_1/index.html">First full-size autonomous school bus at a private university in Japan</a></li>
+      <li><time>2023.10</time> <a href="https://www.sit.ac.jp/news/230925_1/index.html">Full-size autonomous bus on public roads in Nishi-Shinjuku, Tokyo</a></li>
+      <li><time>2023.12</time> <a href="https://www.sit.ac.jp/news/231220_1/index.html">Outreach class for schoolchildren in Fukaya</a></li>
+      <li><time>2024.01</time> <a href="https://www.sit.ac.jp/news/240130_1/index.html">Autonomous Driving Technology Development Center expanded</a></li>
+      <li><time>2024.11</time> <a href="https://www.sit.ac.jp/news/241111_1/index.html">Japan's first autonomous bus rides on renewable diesel</a><span class="tag">Japan first</span></li>
+      <li><time>2025.04</time> Autonomous service of the Fukaya community bus "Kururin" begins</li>
+      <li><time>2025.07</time> <a href="https://www.sit.ac.jp/news/250702_komyunitibasukururin/index.html">Full 37 km Kururin loop driven autonomously</a></li>
+      <li><time>2026.02</time> <a href="https://www.sit.ac.jp/news/260226_bus/index.html">Fukaya Bus Summit held</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="pi" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Principal Investigator</span>
+    <h2>Prof. Daishi Watabe</h2>
+    <div class="pi">
+      <div>
+        <div class="head">
+          <img src="img/watabe_portrait.jpg" alt="Prof. Daishi Watabe">
+          <div>
+            <h3 style="margin:0">Daishi Watabe, Dr. Sci.</h3>
+            <p class="role" style="margin-top:0.2rem">Professor, Department of Information Systems, Faculty of Engineering, and Graduate School of Engineering<br>Vice President, Saitama Institute of Technology<br>Director, Autonomous Driving Technology Development Center</p>
+          </div>
+        </div>
+        <p style="margin-top:1rem">Research and education on AI-based image recognition for autonomous driving and biometrics. Has led the university's autonomous bus development since late 2018 and directs the Autonomous Driving Technology Development Center (established 2019). Member of the MLIT working group on safety standards for autonomous ships, and of ISO/IEC JTC 1/SC 37 (biometrics).</p>
+        <dl>
+          <dt>Degree</dt><dd>Dr. Sci., Tohoku University</dd>
+          <dt>Email</dt><dd><a href="mailto:dw@sit.ac.jp">dw@sit.ac.jp</a></dd>
+          <dt>researchmap</dt><dd><a href="https://researchmap.jp/daishiwatabe?lang=en">researchmap.jp/daishiwatabe</a></dd>
+          <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0003-2731-2226">0000-0003-2731-2226</a></dd>
+          <dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?user=ggYLaXIAAAAJ&amp;hl=en">Google Scholar</a></dd>
+          <dt>Teaching</dt><dd>Information and Coding Theory; Statistical Processing I; Basic Information Engineering Laboratory; Applied Programming Languages; Advanced Media Engineering (graduate)</dd>
+        </dl>
+        <h3 style="margin-top:1rem">Professional service</h3>
+        <ul class="plain">
+          <li>Member, Working Group on Safety Standards and Inspection, Study Group on Autonomous Ships, Maritime Bureau, MLIT (2024&ndash;2025)</li>
+          <li>Member, ISO/IEC JTC 1/SC 37 Biometrics (2016&ndash;2025); Secretary, WG4 and WG6 (2018&ndash;2025)</li>
+          <li>Member, IEICE Technical Committee on Biometrics (2014&ndash;)</li>
+          <li>Editorial Planning Board, Institute of Image Information and Television Engineers (2015&ndash;)</li>
+          <li>Program Chair, International Conference on Biometrics and Kansei Engineering (2019)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Selected publications</h3>
+        <ol class="pubs">
+          <li>Enhancing Safe Driving of Autonomous Buses in Obstructed-View Conditions Using Distributed Monocular Cameras. <span class="venue">IEEE IECON 2024.</span> <a href="https://doi.org/10.1109/IECON55916.2024.10905580">doi</a></li>
+          <li>Improvement of Self-Localization Sensor Transition Based on Autonomous Driving. <span class="venue">IEEE IECON 2023.</span> <a href="https://doi.org/10.1109/iecon51785.2023.10311843">doi</a></li>
+          <li>World's first self-driving amphibious bus. <span class="venue">International Robotics &amp; Automation Journal, 2023.</span> <a href="https://doi.org/10.15406/iratj.2023.09.00254">doi</a></li>
+          <li>ACDR: Autonomous-car drive recorder. <span class="venue">Journal of Robotics and Mechatronics, 2020.</span> <a href="https://doi.org/10.20965/jrm.2020.p0634">doi</a></li>
+          <li>Joystick Car Drive System and its Application to Self-driving Microbus. <span class="venue">IEEE IECON 2020.</span> <a href="https://doi.org/10.1109/IECON43393.2020.9254364">doi</a></li>
+          <li>Use of Generated Ear Images by GAN to Biometrics Based on Deep Learning. <span class="venue">IEICE Transactions A, 2020.</span> <a href="https://doi.org/10.14923/transfunj.2020BAL0002">doi</a></li>
+        </ol>
+        <p style="font-size:0.9rem;margin:0.5rem 0 0">Full list (77 papers): <a href="https://researchmap.jp/daishiwatabe/published_papers?lang=en">researchmap</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="cta">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:#fff3ea">Join us</span>
+      <h2>Come and see the buses.</h2>
+      <p>Prospective students, graduate applicants, and companies or municipalities considering joint research are all welcome to visit. Email us to arrange a date.</p>
+      <div class="btns" style="margin-top:1rem">
+        <a class="btn" href="mailto:dw@sit.ac.jp?subject=Lab%20visit">Arrange a visit</a>
+        <a class="btn ghost" href="https://www.sit.ac.jp/laboguide/kougaku/jouhou_system/">Department lab guide (Japanese)</a>
+      </div>
+    </div>
+    <address>
+      <strong>Autonomous Driving AI Laboratory (Watabe Lab)</strong><br>
+      Department of Information Systems, Faculty of Engineering<br>
+      Saitama Institute of Technology<br>
+      1690 Fusaiji, Fukaya, Saitama 369-0293, Japan<br>
+      Email: <a href="mailto:dw@sit.ac.jp" style="color:#fff">dw@sit.ac.jp</a> &middot; Tel: +81-48-585-2940
+    </address>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; Autonomous Driving AI Laboratory, Saitama Institute of Technology. Photos: Saitama Institute of Technology.</p>
+    <p><a href="https://www.sit.ac.jp/">Saitama Institute of Technology</a> &middot; <a href="index.html" hreflang="ja" lang="ja">日本語</a> &middot; Last updated September 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
